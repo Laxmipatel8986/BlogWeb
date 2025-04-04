@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -174,4 +175,182 @@ body{
 
 a{
     text-decoration: none;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 85%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.header-container{
+    margin-bottom: 1.2rem;
+}
+
+.header-title{
+    margin-bottom: 0.7rem;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.header-dec {
+    
+    text-align: center;
+    
+    font-weight: 450;
+    color: rgb(99, 93, 93);
+}
+
+.main-container{
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(200px,250px));
+    justify-content: center;
+}
+
+/* @media (min-width:500px){
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media (min-width:850px){
+    .main-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+@media (min-width:1050px){
+    .main-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+} */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(103, 98, 98);
+    border-radius: 5px;
+}
+
+.card-img-container{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.card-img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+
+
+.card-container:hover .card-img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card-title{
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: rgb(31, 30, 30);
+      line-height: 1.5rem;
+      margin-bottom: 0.2rem;
+
+}
+
+.card-title-anchor:hover .card-title{
+    color: rgb(77, 77, 186);
+}
+
+.card-desc{
+    color: rgb(123, 120, 120);
+    font-size: 0.7rem;
+    font-weight: 550;
+}
+
+.card-footer-container{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+}
+
+.author-avatar-container{
+    object-fit: cover;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgb(62, 57, 57);
+    border-radius: 50%;
+    background-color: aliceblue;
+    /* margin-bottom: 1rem; */
+    
+}
+
+.author-info-container{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 0.8rem; */
+    margin-left: 0.6rem;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+    
+} 
+
+.card-tag-container{
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.name{
+    color: rgb(55, 55, 150);
+}
+
+.date{
+    color: rgb(126, 136, 136);
+}
+
+a{
+    text-decoration: none;
+>>>>>>> 2e7ea46 (ADDED RESPONSIVENESS ON GRID)
 }
